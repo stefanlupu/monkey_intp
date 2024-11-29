@@ -1,7 +1,12 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"monkeyintp/repl"
+	"os"
+)
 
 func main() {
-	fmt.Println("Hello interpreter!")
+	fmt.Println("* Monkey REPL:")
+	repl.Start(os.Stdin, os.Stdout)
 }
